@@ -1,0 +1,203 @@
+
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 5.15.0-119-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Fri Oct  4 01:03:12 AM HKT 2024
+
+  System load:  0.0               Temperature:           47.0 C
+  Usage of /:   42.3% of 3.44TB   Processes:             997
+  Memory usage: 2%                Users logged in:       3
+  Swap usage:   0%                IPv4 address for eno1: 143.89.22.202
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+61 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+15 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+New release '24.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Thu Oct  3 22:35:20 2024 from 175.159.122.246
+(base) saheli@cez078:~$ conda activate newenv
+(newenv) saheli@cez078:~$ cd ELEC6910A-Assignment0/
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$ ls -lart
+total 28
+-rw-rw-r--   1 saheli saheli  9360 Oct  4 01:02 main.py
+drwxr-x--- 141 saheli saheli 12288 Oct  4 01:02 ..
+drwxrwxr-x   2 saheli saheli  4096 Oct  4 01:02 .
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$ vi main.py
+
+---------------------------------------------------------Code running with Adam Optimizer------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$ python main.py
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:15<00:00, 647180.22it/s]
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 148283.24it/s]
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:02<00:00, 566419.91it/s]
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 2069135.31it/s]
+Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+
+Train images shape: torch.Size([60000, 28, 28]) Train labels shape: torch.Size([60000])
+Test images shape: torch.Size([10000, 28, 28]) Test labels shape: torch.Size([10000])
+Mean: 33.3184, Standard Deviation: 78.5675
+Training MLP model with CrossEntropy loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9423
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:03<00:07,  3.92s/it]Epoch: 1
+Accuracy: 0.9539
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:07<00:03,  3.93s/it]Epoch: 2
+Accuracy: 0.9414
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:11<00:00,  3.87s/it]
+Training CNN model with CrossEntropy loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9753
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:04<00:09,  4.93s/it]Epoch: 1
+Accuracy: 0.9819
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:09<00:04,  4.73s/it]Epoch: 2
+Accuracy: 0.9788
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:14<00:00,  4.69s/it]
+Training LeNet5 model with CrossEntropy loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.972
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:05<00:10,  5.14s/it]Epoch: 1
+Accuracy: 0.9854
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:10<00:05,  5.48s/it]Epoch: 2
+Accuracy: 0.9864
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:16<00:00,  5.58s/it]
+Training MLP model with L2 loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.8936
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:05<00:10,  5.18s/it]Epoch: 1
+Accuracy: 0.8732
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:10<00:05,  5.08s/it]Epoch: 2
+Accuracy: 0.9048
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:15<00:00,  5.09s/it]
+Training CNN model with L2 loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9666
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:05<00:11,  5.64s/it]Epoch: 1
+Accuracy: 0.9739
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:10<00:05,  5.37s/it]Epoch: 2
+Accuracy: 0.9642
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:16<00:00,  5.34s/it]
+Training LeNet5 model with L2 loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9847
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:05<00:11,  5.68s/it]Epoch: 1
+Accuracy: 0.9819
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:11<00:05,  5.69s/it]Epoch: 2
+Accuracy: 0.9853
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:17<00:00,  5.69s/it]
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$ ls -lart
+total 348
+-rw-rw-r--   1 saheli saheli  9361 Oct  4 01:11 main.py
+drwxr-x--- 141 saheli saheli 12288 Oct  4 01:11 ..
+drwxrwxr-x   3 saheli saheli  4096 Oct  4 01:12 data
+-rw-rw-r--   1 saheli saheli 32191 Oct  4 01:12 sample_images.png
+-rw-rw-r--   1 saheli saheli 20817 Oct  4 01:12 label_distribution.png
+-rw-rw-r--   1 saheli saheli 40302 Oct  4 01:12 MLP_Accuracy_CrossEntropy.png
+-rw-rw-r--   1 saheli saheli 35842 Oct  4 01:13 CNN_Accuracy_CrossEntropy.png
+-rw-rw-r--   1 saheli saheli 35744 Oct  4 01:13 LeNet5_Accuracy_CrossEntropy.png
+-rw-rw-r--   1 saheli saheli 35414 Oct  4 01:13 MLP_Accuracy_L2.png
+-rw-rw-r--   1 saheli saheli 35303 Oct  4 01:13 CNN_Accuracy_L2.png
+-rw-rw-r--   1 saheli saheli 39088 Oct  4 01:14 LeNet5_Accuracy_L2.png
+drwxrwxr-x   3 saheli saheli  4096 Oct  4 01:14 .
+-rw-rw-r--   1 saheli saheli 32983 Oct  4 01:14 Accuracy_Comparison.png
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$ vi main.py
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$
+------------------------------------------------Code running with RMSprop Optimizer------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$ python main.py
+Train images shape: torch.Size([60000, 28, 28]) Train labels shape: torch.Size([60000])
+Test images shape: torch.Size([10000, 28, 28]) Test labels shape: torch.Size([10000])
+Mean: 33.3184, Standard Deviation: 78.5675
+Training MLP model with CrossEntropy loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9332
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:03<00:07,  3.65s/it]Epoch: 1
+Accuracy: 0.9454
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:07<00:03,  3.67s/it]Epoch: 2
+Accuracy: 0.9516
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:11<00:00,  3.67s/it]
+Training CNN model with CrossEntropy loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9714
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:04<00:09,  4.66s/it]Epoch: 1
+Accuracy: 0.9769
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:08<00:04,  4.45s/it]Epoch: 2
+Accuracy: 0.9647
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:13<00:00,  4.42s/it]
+Training LeNet5 model with CrossEntropy loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9782
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:04<00:09,  4.87s/it]Epoch: 1
+Accuracy: 0.986
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:09<00:04,  4.82s/it]Epoch: 2
+Accuracy: 0.9869
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:14<00:00,  4.82s/it]
+Training MLP model with L2 loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9076
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:04<00:08,  4.16s/it]Epoch: 1
+Accuracy: 0.9334
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:08<00:04,  4.11s/it]Epoch: 2
+Accuracy: 0.9301
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:12<00:00,  4.10s/it]
+Training CNN model with L2 loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.975
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:04<00:09,  4.73s/it]Epoch: 1
+Accuracy: 0.9773
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:09<00:04,  4.71s/it]Epoch: 2
+Accuracy: 0.9735
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:14<00:00,  4.71s/it]
+Training LeNet5 model with L2 loss on cuda using 3 epochs, 64 batch size and 0.001 learning rate
+  0%|                                                                                                                                                                                        | 0/3 [00:00<?, ?it/s]Epoch: 0
+Accuracy: 0.9849
+ 33%|██████████████████████████████████████████████████████████▋                                                                                                                     | 1/3 [00:05<00:10,  5.07s/it]Epoch: 1
+Accuracy: 0.9889
+ 67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                          | 2/3 [00:10<00:05,  5.14s/it]Epoch: 2
+Accuracy: 0.9868
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:15<00:00,  5.14s/it]
+(newenv) saheli@cez078:~/ELEC6910A-Assignment0$
